@@ -1,264 +1,2968 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
- <HEAD>
-  <TITLE> I Love You </TITLE>
-  <META NAME="Generator" CONTENT="EditPlus">
-  <META NAME="Author" CONTENT="">
-  <META NAME="Keywords" CONTENT="">
-  <META NAME="Description" CONTENT="">
-  <style>
-  html, body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background: #000;
-}
-canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-  </style>
- </HEAD>
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <meta property="fb:admins" content="Phimmoi"/>
+        <meta property="fb:app_id" content="959727268497716"/>
+        <title>Phimmoi | Phimmoi.net | Xem phim mới | Phim hay | Phim chiếu rạp</title>
+        <meta name="description" content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh."/>
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+        <link rel="canonical" href="https://phimmoiyyy.net"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Phimmoi | Phimmoi.net | Xem phim mới | Phim hay | Phim chiếu rạp"/>
+        <meta property="og:description" content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh."/>
+        <meta property="og:url" content="https://phimmoiyyy.net"/>
+        <meta property="og:site_name" content="Phimmoi"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Phimmoi | Phimmoi.net | Xem phim mới | Phim hay | Phim chiếu rạp"/>
+        <meta name="twitter:description" content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh."/>
+        <script type="application/ld+json" class="rank-math-schema">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Person",
+                        "@id": "https://phimmoiyyy.net/#person",
+                        "name": "Phimmoi",
+                        "image": {
+                            "@type": "ImageObject",
+                            "@id": "https://phimmoiyyy.net/#logo",
+                            "url": "https://phimmoiyyy.net/wp-content/uploads/2023/03/Moiphimphimmoi.png",
+                            "contentUrl": "https://phimmoiyyy.net/wp-content/uploads/2023/03/Moiphimphimmoi.png",
+                            "caption": "Phimmoi",
+                            "inLanguage": "en-US"
+                        }
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://phimmoiyyy.net/#website",
+                        "url": "https://phimmoiyyy.net",
+                        "name": "Phimmoi",
+                        "publisher": {
+                            "@id": "https://phimmoiyyy.net/#person"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://phimmoiyyy.net/?s={search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    },
+                    {
+                        "@type": "CollectionPage",
+                        "@id": "https://phimmoiyyy.net#webpage",
+                        "url": "https://phimmoiyyy.net",
+                        "name": "Phimmoi | Phimmoi.net | Xem phim m\u1edbi | Phim hay | Phim chi\u1ebfu r\u1ea1p",
+                        "about": {
+                            "@id": "https://phimmoiyyy.net/#person"
+                        },
+                        "isPartOf": {
+                            "@id": "https://phimmoiyyy.net/#website"
+                        },
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }</script>
+        <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+        <link rel="alternate" type="application/rss+xml" title="Phimmoi &raquo; Feed" href="https://phimmoiyyy.net/feed"/>
+        <link rel="alternate" type="application/rss+xml" title="Phimmoi &raquo; Comments Feed" href="https://phimmoiyyy.net/comments/feed"/>
+        <link rel="stylesheet" id="wp-block-library-css" href="https://phimmoiyyy.net/wp-includes/css/dist/block-library/style.min.css?ver=6.4" type="text/css" media="all"/>
+        <style id="classic-theme-styles-inline-css" type="text/css">
+            /*! This file is auto-generated */
+            .wp-block-button__link {
+                color: #fff;
+                background-color: #32373c;
+                border-radius: 9999px;
+                box-shadow: none;
+                text-decoration: none;
+                padding: calc(.667em + 2px) calc(1.333em + 2px);
+                font-size: 1.125em
+            }
 
- <BODY>
-  <canvas id="pinkboard"></canvas>
-  <script>
-  /*
- * Settings
- */
-var settings = {
-  particles: {
-    length:   500, // maximum amount of particles
-    duration:   2, // particle duration in sec
-    velocity: 100, // particle velocity in pixels/sec
-    effect: -0.75, // play with this for a nice effect
-    size:      30, // particle size in pixels
-  },
-};
+            .wp-block-file__button {
+                background: #32373c;
+                color: #fff;
+                text-decoration: none
+            }
+        </style>
+        <style id="global-styles-inline-css" type="text/css">
+            body {
+                --wp--preset--color--black: #000000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #ffffff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+                --wp--preset--spacing--20: 0.44rem;
+                --wp--preset--spacing--30: 0.67rem;
+                --wp--preset--spacing--40: 1rem;
+                --wp--preset--spacing--50: 1.5rem;
+                --wp--preset--spacing--60: 2.25rem;
+                --wp--preset--spacing--70: 3.38rem;
+                --wp--preset--spacing--80: 5.06rem;
+                --wp--preset--shadow--natural: 6px 6px 9px rgba(0,0,0,0.2);
+                --wp--preset--shadow--deep: 12px 12px 50px rgba(0,0,0,0.4);
+                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0,0,0,0.2);
+                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255,255,255,1),6px 6px rgba(0,0,0,1);
+                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0,0,0,1)
+            }
 
-/*
- * RequestAnimationFrame polyfill by Erik Möller
- */
-(function(){var b=0;var c=["ms","moz","webkit","o"];for(var a=0;a<c.length&&!window.requestAnimationFrame;++a){window.requestAnimationFrame=window[c[a]+"RequestAnimationFrame"];window.cancelAnimationFrame=window[c[a]+"CancelAnimationFrame"]||window[c[a]+"CancelRequestAnimationFrame"]}if(!window.requestAnimationFrame){window.requestAnimationFrame=function(h,e){var d=new Date().getTime();var f=Math.max(0,16-(d-b));var g=window.setTimeout(function(){h(d+f)},f);b=d+f;return g}}if(!window.cancelAnimationFrame){window.cancelAnimationFrame=function(d){clearTimeout(d)}}}());
+            :where(.is-layout-flex) {
+                gap: 0.5em
+            }
 
-/*
- * Point class
- */
-var Point = (function() {
-  function Point(x, y) {
-    this.x = (typeof x !== 'undefined') ? x : 0;
-    this.y = (typeof y !== 'undefined') ? y : 0;
-  }
-  Point.prototype.clone = function() {
-    return new Point(this.x, this.y);
-  };
-  Point.prototype.length = function(length) {
-    if (typeof length == 'undefined')
-      return Math.sqrt(this.x * this.x + this.y * this.y);
-    this.normalize();
-    this.x *= length;
-    this.y *= length;
-    return this;
-  };
-  Point.prototype.normalize = function() {
-    var length = this.length();
-    this.x /= length;
-    this.y /= length;
-    return this;
-  };
-  return Point;
-})();
+            :where(.is-layout-grid) {
+                gap: 0.5em
+            }
 
-/*
- * Particle class
- */
-var Particle = (function() {
-  function Particle() {
-    this.position = new Point();
-    this.velocity = new Point();
-    this.acceleration = new Point();
-    this.age = 0;
-  }
-  Particle.prototype.initialize = function(x, y, dx, dy) {
-    this.position.x = x;
-    this.position.y = y;
-    this.velocity.x = dx;
-    this.velocity.y = dy;
-    this.acceleration.x = dx * settings.particles.effect;
-    this.acceleration.y = dy * settings.particles.effect;
-    this.age = 0;
-  };
-  Particle.prototype.update = function(deltaTime) {
-    this.position.x += this.velocity.x * deltaTime;
-    this.position.y += this.velocity.y * deltaTime;
-    this.velocity.x += this.acceleration.x * deltaTime;
-    this.velocity.y += this.acceleration.y * deltaTime;
-    this.age += deltaTime;
-  };
-  Particle.prototype.draw = function(context, image) {
-    function ease(t) {
-      return (--t) * t * t + 1;
-    }
-    var size = image.width * ease(this.age / settings.particles.duration);
-    context.globalAlpha = 1 - this.age / settings.particles.duration;
-    context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
-  };
-  return Particle;
-})();
+            body .is-layout-flow > .alignleft {
+                float: left;
+                margin-inline-start:0;margin-inline-end:2em}
 
-/*
- * ParticlePool class
- */
-var ParticlePool = (function() {
-  var particles,
-      firstActive = 0,
-      firstFree   = 0,
-      duration    = settings.particles.duration;
-  
-  function ParticlePool(length) {
-    // create and populate particle pool
-    particles = new Array(length);
-    for (var i = 0; i < particles.length; i++)
-      particles[i] = new Particle();
-  }
-  ParticlePool.prototype.add = function(x, y, dx, dy) {
-    particles[firstFree].initialize(x, y, dx, dy);
-    
-    // handle circular queue
-    firstFree++;
-    if (firstFree   == particles.length) firstFree   = 0;
-    if (firstActive == firstFree       ) firstActive++;
-    if (firstActive == particles.length) firstActive = 0;
-  };
-  ParticlePool.prototype.update = function(deltaTime) {
-    var i;
-    
-    // update active particles
-    if (firstActive < firstFree) {
-      for (i = firstActive; i < firstFree; i++)
-        particles[i].update(deltaTime);
-    }
-    if (firstFree < firstActive) {
-      for (i = firstActive; i < particles.length; i++)
-        particles[i].update(deltaTime);
-      for (i = 0; i < firstFree; i++)
-        particles[i].update(deltaTime);
-    }
-    
-    // remove inactive particles
-    while (particles[firstActive].age >= duration && firstActive != firstFree) {
-      firstActive++;
-      if (firstActive == particles.length) firstActive = 0;
-    }
-    
-    
-  };
-  ParticlePool.prototype.draw = function(context, image) {
-    // draw active particles
-    if (firstActive < firstFree) {
-      for (i = firstActive; i < firstFree; i++)
-        particles[i].draw(context, image);
-    }
-    if (firstFree < firstActive) {
-      for (i = firstActive; i < particles.length; i++)
-        particles[i].draw(context, image);
-      for (i = 0; i < firstFree; i++)
-        particles[i].draw(context, image);
-    }
-  };
-  return ParticlePool;
-})();
+            body .is-layout-flow > .alignright {
+                float: right;
+                margin-inline-start:2em;margin-inline-end:0}
 
-/*
- * Putting it all together
- */
-(function(canvas) {
-  var context = canvas.getContext('2d'),
-      particles = new ParticlePool(settings.particles.length),
-      particleRate = settings.particles.length / settings.particles.duration, // particles/sec
-      time;
-  
-  // get point on heart with -PI <= t <= PI
-  function pointOnHeart(t) {
-    return new Point(
-      160 * Math.pow(Math.sin(t), 3),
-      130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
-    );
-  }
-  
-  // creating the particle image using a dummy canvas
-  var image = (function() {
-    var canvas  = document.createElement('canvas'),
-        context = canvas.getContext('2d');
-    canvas.width  = settings.particles.size;
-    canvas.height = settings.particles.size;
-    // helper function to create the path
-    function to(t) {
-      var point = pointOnHeart(t);
-      point.x = settings.particles.size / 2 + point.x * settings.particles.size / 350;
-      point.y = settings.particles.size / 2 - point.y * settings.particles.size / 350;
-      return point;
-    }
-    // create the path
-    context.beginPath();
-    var t = -Math.PI;
-    var point = to(t);
-    context.moveTo(point.x, point.y);
-    while (t < Math.PI) {
-      t += 0.01; // baby steps!
-      point = to(t);
-      context.lineTo(point.x, point.y);
-    }
-    context.closePath();
-    // create the fill
-    context.fillStyle = '#ea80b0';
-    context.fill();
-    // create the image
-    var image = new Image();
-    image.src = canvas.toDataURL();
-    return image;
-  })();
-  
-  // render that thing!
-  function render() {
-    // next animation frame
-    requestAnimationFrame(render);
-    
-    // update time
-    var newTime   = new Date().getTime() / 1000,
-        deltaTime = newTime - (time || newTime);
-    time = newTime;
-    
-    // clear canvas
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    
-    // create new particles
-    var amount = particleRate * deltaTime;
-    for (var i = 0; i < amount; i++) {
-      var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity);
-      particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
-    }
-    
-    // update and draw particles
-    particles.update(deltaTime);
-    particles.draw(context, image);
-  }
-  
-  // handle (re-)sizing of the canvas
-  function onResize() {
-    canvas.width  = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
-  }
-  window.onresize = onResize;
-  
-  // delay rendering bootstrap
-  setTimeout(function() {
-    onResize();
-    render();
-  }, 10);
-})(document.getElementById('pinkboard'));
-  </script>
- </BODY>
-</HTML>
+            body .is-layout-flow > .aligncenter {
+                margin-left: auto !important;
+                margin-right: auto !important
+            }
+
+            body .is-layout-constrained > .alignleft {
+                float: left;
+                margin-inline-start:0;margin-inline-end:2em}
+
+            body .is-layout-constrained > .alignright {
+                float: right;
+                margin-inline-start:2em;margin-inline-end:0}
+
+            body .is-layout-constrained > .aligncenter {
+                margin-left: auto !important;
+                margin-right: auto !important
+            }
+
+            body .is-layout-constrained >:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+                max-width: var(--wp--style--global--content-size);
+                margin-left: auto !important;
+                margin-right: auto !important
+            }
+
+            body .is-layout-constrained > .alignwide {
+                max-width: var(--wp--style--global--wide-size)
+            }
+
+            body .is-layout-flex {
+                display: flex
+            }
+
+            body .is-layout-flex {
+                flex-wrap: wrap;
+                align-items: center
+            }
+
+            body .is-layout-flex > * {
+                margin: 0
+            }
+
+            body .is-layout-grid {
+                display: grid
+            }
+
+            body .is-layout-grid > * {
+                margin: 0
+            }
+
+            :where(.wp-block-columns.is-layout-flex) {
+                gap: 2em
+            }
+
+            :where(.wp-block-columns.is-layout-grid) {
+                gap: 2em
+            }
+
+            :where(.wp-block-post-template.is-layout-flex) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-post-template.is-layout-grid) {
+                gap: 1.25em
+            }
+
+            .has-black-color {
+                color: var(--wp--preset--color--black) !important
+            }
+
+            .has-cyan-bluish-gray-color {
+                color: var(--wp--preset--color--cyan-bluish-gray) !important
+            }
+
+            .has-white-color {
+                color: var(--wp--preset--color--white) !important
+            }
+
+            .has-pale-pink-color {
+                color: var(--wp--preset--color--pale-pink) !important
+            }
+
+            .has-vivid-red-color {
+                color: var(--wp--preset--color--vivid-red) !important
+            }
+
+            .has-luminous-vivid-orange-color {
+                color: var(--wp--preset--color--luminous-vivid-orange) !important
+            }
+
+            .has-luminous-vivid-amber-color {
+                color: var(--wp--preset--color--luminous-vivid-amber) !important
+            }
+
+            .has-light-green-cyan-color {
+                color: var(--wp--preset--color--light-green-cyan) !important
+            }
+
+            .has-vivid-green-cyan-color {
+                color: var(--wp--preset--color--vivid-green-cyan) !important
+            }
+
+            .has-pale-cyan-blue-color {
+                color: var(--wp--preset--color--pale-cyan-blue) !important
+            }
+
+            .has-vivid-cyan-blue-color {
+                color: var(--wp--preset--color--vivid-cyan-blue) !important
+            }
+
+            .has-vivid-purple-color {
+                color: var(--wp--preset--color--vivid-purple) !important
+            }
+
+            .has-black-background-color {
+                background-color: var(--wp--preset--color--black) !important
+            }
+
+            .has-cyan-bluish-gray-background-color {
+                background-color: var(--wp--preset--color--cyan-bluish-gray) !important
+            }
+
+            .has-white-background-color {
+                background-color: var(--wp--preset--color--white) !important
+            }
+
+            .has-pale-pink-background-color {
+                background-color: var(--wp--preset--color--pale-pink) !important
+            }
+
+            .has-vivid-red-background-color {
+                background-color: var(--wp--preset--color--vivid-red) !important
+            }
+
+            .has-luminous-vivid-orange-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-orange) !important
+            }
+
+            .has-luminous-vivid-amber-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-amber) !important
+            }
+
+            .has-light-green-cyan-background-color {
+                background-color: var(--wp--preset--color--light-green-cyan) !important
+            }
+
+            .has-vivid-green-cyan-background-color {
+                background-color: var(--wp--preset--color--vivid-green-cyan) !important
+            }
+
+            .has-pale-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--pale-cyan-blue) !important
+            }
+
+            .has-vivid-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--vivid-cyan-blue) !important
+            }
+
+            .has-vivid-purple-background-color {
+                background-color: var(--wp--preset--color--vivid-purple) !important
+            }
+
+            .has-black-border-color {
+                border-color: var(--wp--preset--color--black) !important
+            }
+
+            .has-cyan-bluish-gray-border-color {
+                border-color: var(--wp--preset--color--cyan-bluish-gray) !important
+            }
+
+            .has-white-border-color {
+                border-color: var(--wp--preset--color--white) !important
+            }
+
+            .has-pale-pink-border-color {
+                border-color: var(--wp--preset--color--pale-pink) !important
+            }
+
+            .has-vivid-red-border-color {
+                border-color: var(--wp--preset--color--vivid-red) !important
+            }
+
+            .has-luminous-vivid-orange-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-orange) !important
+            }
+
+            .has-luminous-vivid-amber-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-amber) !important
+            }
+
+            .has-light-green-cyan-border-color {
+                border-color: var(--wp--preset--color--light-green-cyan) !important
+            }
+
+            .has-vivid-green-cyan-border-color {
+                border-color: var(--wp--preset--color--vivid-green-cyan) !important
+            }
+
+            .has-pale-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--pale-cyan-blue) !important
+            }
+
+            .has-vivid-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--vivid-cyan-blue) !important
+            }
+
+            .has-vivid-purple-border-color {
+                border-color: var(--wp--preset--color--vivid-purple) !important
+            }
+
+            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+                background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important
+            }
+
+            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+                background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important
+            }
+
+            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important
+            }
+
+            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important
+            }
+
+            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+                background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important
+            }
+
+            .has-cool-to-warm-spectrum-gradient-background {
+                background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important
+            }
+
+            .has-blush-light-purple-gradient-background {
+                background: var(--wp--preset--gradient--blush-light-purple) !important
+            }
+
+            .has-blush-bordeaux-gradient-background {
+                background: var(--wp--preset--gradient--blush-bordeaux) !important
+            }
+
+            .has-luminous-dusk-gradient-background {
+                background: var(--wp--preset--gradient--luminous-dusk) !important
+            }
+
+            .has-pale-ocean-gradient-background {
+                background: var(--wp--preset--gradient--pale-ocean) !important
+            }
+
+            .has-electric-grass-gradient-background {
+                background: var(--wp--preset--gradient--electric-grass) !important
+            }
+
+            .has-midnight-gradient-background {
+                background: var(--wp--preset--gradient--midnight) !important
+            }
+
+            .has-small-font-size {
+                font-size: var(--wp--preset--font-size--small) !important
+            }
+
+            .has-medium-font-size {
+                font-size: var(--wp--preset--font-size--medium) !important
+            }
+
+            .has-large-font-size {
+                font-size: var(--wp--preset--font-size--large) !important
+            }
+
+            .has-x-large-font-size {
+                font-size: var(--wp--preset--font-size--x-large) !important
+            }
+
+            .wp-block-navigation a:where(:not(.wp-element-button)) {
+                color: inherit
+            }
+
+            :where(.wp-block-post-template.is-layout-flex) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-post-template.is-layout-grid) {
+                gap: 1.25em
+            }
+
+            :where(.wp-block-columns.is-layout-flex) {
+                gap: 2em
+            }
+
+            :where(.wp-block-columns.is-layout-grid) {
+                gap: 2em
+            }
+
+            .wp-block-pullquote {
+                font-size: 1.5em;
+                line-height: 1.6
+            }
+        </style>
+        <link rel="stylesheet" id="fontawesome-pro-css" href="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/fontawesome/css/all.min.css?ver=5.15.1" type="text/css" media="all"/>
+        <link rel="stylesheet" id="owl-carousel-css" href="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/css/front.owl.min.css?ver=2.5.5" type="text/css" media="all"/>
+        <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700&#038;ver=2.5.5" type="text/css" media="all"/>
+        <link rel="stylesheet" id="scrollbar-css" href="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/css/front.crollbar.min.css?ver=2.5.5" type="text/css" media="all"/>
+        <link rel="stylesheet" id="dooplay-css" href="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/css/front.style.min.css?ver=2.5.5" type="text/css" media="all"/>
+        <link rel="stylesheet" id="dooplay-color-scheme-css" href="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/css/colors.dark.min.css?ver=2.5.5" type="text/css" media="all"/>
+        <link rel="stylesheet" id="dooplay-responsive-css" href="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/css/front.mobile.min.css?ver=2.5.5" type="text/css" media="all"/>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/lib/lazyload.js?ver=2.5.5" id="lazyload-js"></script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/lib/pwsscrollbar.js?ver=2.5.5" id="scrollbar-js"></script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/lib/owlcarousel.js?ver=2.5.5" id="owl-carousel-js"></script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/lib/idtabs.js?ver=2.5.5" id="idTabs-js"></script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/lib/isrepeater.js?ver=2.5.5" id="dtRepeat-js"></script>
+        <script type="text/javascript" id="dt_main_ajax-js-extra">
+            /* <![CDATA[ */
+            var dtAjax = {
+                "url": "\/wp-admin\/admin-ajax.php",
+                "player_api": "https:\/\/phimmoiyyy.net\/wp-json\/dooplayer\/v2\/",
+                "play_ajaxmd": "1",
+                "play_method": "admin_ajax",
+                "googlercptc": null,
+                "classitem": "5",
+                "loading": "Loading..",
+                "afavorites": "Add to favorites",
+                "rfavorites": "Remove of favorites",
+                "views": "l\u01b0\u1ee3t xem",
+                "remove": "Remove",
+                "isawit": "I saw it",
+                "send": "Data send..",
+                "updating": "Updating data..",
+                "error": "Error",
+                "pending": "Pending review",
+                "ltipe": "Download",
+                "sending": "Sending data",
+                "enabled": "Enable",
+                "disabled": "Disable",
+                "trash": "Delete",
+                "lshared": "Links Shared",
+                "ladmin": "Manage pending links",
+                "sendingrep": "Please wait, sending data..",
+                "ready": "Ready",
+                "deletelin": "Do you really want to delete this link?"
+            };
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/front.ajax.min.js?ver=2.5.5" id="dt_main_ajax-js"></script>
+        <link rel="https://api.w.org/" href="https://phimmoiyyy.net/wp-json/"/>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://phimmoiyyy.net/xmlrpc.php?rsd"/>
+        <meta name="generator" content="WordPress 6.4"/>
+        <style type="text/css">
+            #floating_ads_bottom_textcss_container {
+                position: fixed;
+                bottom: 2px;
+                width: 100%;
+                padding: 0px 20px 0px
+            }
+
+            #floating_ads_bottom_textcss_wrap {
+                text-align: center
+            }
+
+            #floating_ads_bottom_textcss_close {
+                position: absolute;
+                top: -20px;
+                display: inline-block
+            }
+        </style>
+        <script type="text/javascript">
+            jQuery(document).ready(function(a) {
+                "false" == dtGonza.mobile && a(window).load(function() {
+                    a(".scrolling").mCustomScrollbar({
+                        theme: "minimal-dark",
+                        scrollInertia: 200,
+                        scrollButtons: {
+                            enable: !0
+                        },
+                        callbacks: {
+                            onTotalScrollOffset: 100,
+                            alwaysTriggerOffsets: !1
+                        }
+                    })
+                })
+            });
+        </script>
+        <style type="text/css">
+            body {
+                font-family: "Roboto",sans-serif
+            }
+
+            body {
+                background-color: #424040
+            }
+
+            header.main .hbox,#contenedor,footer.main .fbox {
+                max-width: 1200px
+            }
+
+            a,.home-blog-post .entry-date .date,.top-imdb-item:hover>.title a,.module .content .items .item .data h3 a:hover,.head-main-nav ul.main-header li:hover>a,.login_box .box a.register {
+                color: #408BEA
+            }
+
+            .nav_items_module a.btn:hover,.pagination span.current,.w_item_b a:hover>.data .wextra b:before,.comment-respond h3:before,footer.main .fbox .fmenu ul li a:hover {
+                color: #408BEA
+            }
+
+            header.main .hbox .search form button[type=submit]:hover,.loading,.sgeneros a:hover,.page_user nav.user ul li a:hover {
+                color: #408BEA
+            }
+
+            footer.main .fbox .fmenu ul li.current-menu-item a,.posts .meta .autor i,.pag_episodes .item a:hover,a.link_a:hover,ul.smenu li a:hover {
+                color: #408BEA
+            }
+
+            header.responsive .nav a.active:before,header.responsive .search a.active:before,.dtuser a.clicklogin:hover,.menuresp .menu ul.resp li a:hover,.menuresp .menu ul.resp li ul.sub-menu li a:hover {
+                color: #408BEA
+            }
+
+            .sl-wrapper a:before,table.account_links tbody td a:hover,.dt_mainmeta nav.genres ul li a:hover {
+                color: #408BEA
+            }
+
+            .dt_mainmeta nav.genres ul li.current-cat a:before,.dooplay_player .options ul li:hover span.title {
+                color: #408BEA
+            }
+
+            .head-main-nav ul.main-header li ul.sub-menu li a:hover,form.form-resp-ab button[type=submit]:hover>span,.sidebar aside.widget ul li a:hover {
+                color: #408BEA
+            }
+
+            header.top_imdb h1.top-imdb-h1 span,article.post .information .meta span.autor,.w_item_c a:hover>.rating i,span.comment-author-link,.pagination a:hover {
+                color: #408BEA
+            }
+
+            .letter_home ul.glossary li a:hover,.letter_home ul.glossary li a.active,.user_control a.in-list {
+                color: #408BEA
+            }
+
+            .headitems a#dooplay_signout:hover,.login_box .box a#c_loginbox:hover {
+                color: #408BEA
+            }
+
+            .report_modal .box .form form fieldset label:hover > span.title {
+                color: #408BEA
+            }
+
+            .linktabs ul li a.selected,ul.smenu li a.selected,a.liked,.module .content header span a.see-all,.page_user nav.user ul li a.selected,.dt_mainmeta nav.releases ul li a:hover {
+                background: #408BEA
+            }
+
+            a.see_all,p.form-submit input[type=submit]:hover,.report-video-form fieldset input[type=submit],a.mtoc,.contact .wrapper fieldset input[type=submit],span.item_type,a.main {
+                background: #408BEA
+            }
+
+            .post-comments .comment-reply-link:hover,#seasons .se-c .se-q span.se-o,#edit_link .box .form_edit .cerrar a:hover {
+                background: #408BEA
+            }
+
+            .user_edit_control ul li a.selected,form.update_profile fieldset input[type=submit],.page_user .content .paged a.load_more:hover,#edit_link .box .form_edit fieldset input[type="submit"] {
+                background: #408BEA
+            }
+
+            .login_box .box input[type="submit"],.form_post_lik .control .left a.add_row:hover,.form_post_lik .table table tbody tr td a.remove_row:hover,.form_post_lik .control .right input[type="submit"] {
+                background: #408BEA
+            }
+
+            #dt_contenedor {
+                background-color: #424040
+            }
+
+            .plyr input[type=range]::-ms-fill-lower {
+                background: #408BEA
+            }
+
+            .menuresp .menu .user a.ctgs,.menuresp .menu .user .logout a:hover {
+                background: #408BEA
+            }
+
+            .plyr input[type=range]:active::-webkit-slider-thumb {
+                background: #408BEA
+            }
+
+            .plyr input[type=range]:active::-moz-range-thumb {
+                background: #408BEA
+            }
+
+            .plyr input[type=range]:active::-ms-thumb {
+                background: #408BEA
+            }
+
+            .tagcloud a:hover,ul.abc li a:hover,ul.abc li a.select, {
+                background: #408BEA
+            }
+
+            .featu {
+                background: #ff0000
+            }
+
+            .report_modal .box .form form fieldset input[type=submit] {
+                background-color: #408BEA
+            }
+
+            .contact .wrapper fieldset input[type=text]:focus,.contact .wrapper fieldset textarea:focus,header.main .hbox .dt_user ul li ul li:hover > a,.login_box .box a.register {
+                border-color: #408BEA
+            }
+
+            .module .content header h1 {
+                border-color: #408BEA
+            }
+
+            .module .content header h2 {
+                border-color: #408BEA
+            }
+
+            a.see_all {
+                border-color: #408BEA
+            }
+
+            .top-imdb-list h3 {
+                border-color: #408BEA
+            }
+
+            .user_edit_control ul li a.selected:before {
+                border-top-color: #408BEA
+            }
+
+            header.main .loading {
+                color: #fff!important
+            }
+
+            .starstruck .star-on-png:before {
+                color: #408BEA
+            }
+
+            .head-main-nav ul.main-header li ul.sub-menu li {
+                width: calc(100%/3)
+            }
+
+            .head-main-nav ul.main-header li ul.sub-menu {
+                display: none;
+                position: absolute;
+                top: 70px;
+                max-width: 500px;
+                padding-left: 0;
+                box-shadow: 0 5px 10px 0 rgba(0,0,0,2)
+            }
+        </style>
+    </head>
+    <div id="theh1">
+        <h1>phimmoi</h1>
+    </div>
+    <body class="home blog">
+        <div id="dt_contenedor">
+            <header id="header" class="main">
+                <div class="hbox">
+                    <div class="fix-hidden">
+                        <div class="logo">
+                            <a href="https://phimmoiyyy.net">
+                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/03/phimmoi.png" alt="Phimmoi"/>
+                            </a>
+                        </div>
+                        <div class="head-main-nav">
+                            <div class="menu-header-container">
+                                <ul id="main_header" class="main-header">
+                                    <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-8">
+                                        <a href="https://phimmoiyyy.net" aria-current="page">Phimmoi</a>
+                                    </li>
+                                    <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
+                                        <a href="https://phimmoiyyy.net/phim-le">Phim lẻ</a>
+                                    </li>
+                                    <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+                                        <a href="https://phimmoiyyy.net/phim-bo">Phim bộ</a>
+                                    </li>
+                                    <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13">
+                                        <a href="#">Thể loại</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-chieu-rap">Phim Chiếu Rạp</a>
+                                            </li>
+                                            <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-co-trang">Phim Cổ Trang</a>
+                                            </li>
+                                            <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-tam-ly">Phim Tâm Lý</a>
+                                            </li>
+                                            <li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-tinh-cam">Phim Tình Cảm</a>
+                                            </li>
+                                            <li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-bi-an">Phim Bí Ẩn</a>
+                                            </li>
+                                            <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-kinh-di">Phim Kinh Dị</a>
+                                            </li>
+                                            <li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-hanh-dong">Phim Hành Động</a>
+                                            </li>
+                                            <li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-vo-thuat">Phim Võ Thuật</a>
+                                            </li>
+                                            <li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-kich-tinh">Phim Kịch Tính</a>
+                                            </li>
+                                            <li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-chien-tranh">Phim Chiến Tranh</a>
+                                            </li>
+                                            <li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-phieu-luu">Phim Phiêu Lưu</a>
+                                            </li>
+                                            <li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-hai">Phim Hài</a>
+                                            </li>
+                                            <li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-bl">Phim BL</a>
+                                            </li>
+                                            <li id="menu-item-111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-18">Phim 18+</a>
+                                            </li>
+                                            <li id="menu-item-100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-hinh-su">Phim Hình Sự</a>
+                                            </li>
+                                            <li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-gia-dinh">Phim Gia Đình</a>
+                                            </li>
+                                            <li id="menu-item-112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-khoa-hoc">Phim Khoa Học</a>
+                                            </li>
+                                            <li id="menu-item-108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-vien-thuong">Phim Viễn Tưởng</a>
+                                            </li>
+                                            <li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-netflix">Phim Netflix</a>
+                                            </li>
+                                            <li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-am-nhac">Phim Âm Nhạc</a>
+                                            </li>
+                                            <li id="menu-item-104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-than-thoai">Phim Thần Thoại</a>
+                                            </li>
+                                            <li id="menu-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-hoat-hinh">Phim Hoạt Hình</a>
+                                            </li>
+                                            <li id="menu-item-107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107">
+                                                <a href="https://phimmoiyyy.net/the-loai/phim-chinh-kich">Phim Chính Kịch</a>
+                                            </li>
+                                            <li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109">
+                                                <a href="https://phimmoiyyy.net/the-loai/tv-shows">TV Shows</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                                        <a href="#">Quốc gia</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-113" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-au-my">Phim Âu Mỹ</a>
+                                            </li>
+                                            <li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-han-quoc">Phim Hàn Quốc</a>
+                                            </li>
+                                            <li id="menu-item-115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-trung-quoc">Phim Trung Quốc</a>
+                                            </li>
+                                            <li id="menu-item-116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-nhat-ban">Phim Nhật Bản</a>
+                                            </li>
+                                            <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-dai-loan">Phim Đài Loan</a>
+                                            </li>
+                                            <li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-hong-kong">Phim Hồng Kông</a>
+                                            </li>
+                                            <li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-thai-lan">Phim Thái Lan</a>
+                                            </li>
+                                            <li id="menu-item-120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-an-do">Phim Ấn Độ</a>
+                                            </li>
+                                            <li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-philippines">Phim Philippines</a>
+                                            </li>
+                                            <li id="menu-item-122" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-viet-nam">Phim Việt Nam</a>
+                                            </li>
+                                            <li id="menu-item-123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-123">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-indonesia">Phim Indonesia</a>
+                                            </li>
+                                            <li id="menu-item-124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124">
+                                                <a href="https://phimmoiyyy.net/quoc-gia/phim-singapore">Phim Singapore</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="headitems ">
+                            <div id="advc-menu" class="search">
+                                <form method="get" id="searchform" action="https://phimmoiyyy.net">
+                                    <input type="text" placeholder="Tìm kiếm..." name="s" id="s" value autocomplete="off">
+                                    <button class="search-button" type="submit">
+                                        <span class="fas fa-search"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="live-search ltr"></div>
+                </div>
+            </header>
+            <div class="fixheadresp">
+                <header class="responsive">
+                    <div class="nav">
+                        <a class="aresp nav-resp"></a>
+                    </div>
+                    <div class="search">
+                        <a class="aresp search-resp"></a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://phimmoiyyy.net/">
+                            <img src="https://phimmoiyyy.net/wp-content/uploads/2023/03/phimmoi.png" alt="Phimmoi"/>
+                        </a>
+                    </div>
+                </header>
+                <div class="search_responsive">
+                    <form method="get" id="form-search-resp" class="form-resp-ab" action="https://phimmoiyyy.net">
+                        <input type="text" placeholder="Tìm kiếm..." name="s" id="ms" value autocomplete="off">
+                        <button type="submit" class="search-button">
+                            <span class="fas fa-search"></span>
+                        </button>
+                    </form>
+                    <div class="live-search"></div>
+                </div>
+                <div id="arch-menu" class="menuresp">
+                    <div class="menu">
+                        <div class="menu-header-container">
+                            <ul id="main_header" class="resp">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-8">
+                                    <a href="https://phimmoiyyy.net" aria-current="page">Phimmoi</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
+                                    <a href="https://phimmoiyyy.net/phim-le">Phim lẻ</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+                                    <a href="https://phimmoiyyy.net/phim-bo">Phim bộ</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13">
+                                    <a href="#">Thể loại</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-chieu-rap">Phim Chiếu Rạp</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-co-trang">Phim Cổ Trang</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-tam-ly">Phim Tâm Lý</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-tinh-cam">Phim Tình Cảm</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-bi-an">Phim Bí Ẩn</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-kinh-di">Phim Kinh Dị</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-hanh-dong">Phim Hành Động</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-vo-thuat">Phim Võ Thuật</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-kich-tinh">Phim Kịch Tính</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-chien-tranh">Phim Chiến Tranh</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-phieu-luu">Phim Phiêu Lưu</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-hai">Phim Hài</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-bl">Phim BL</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-18">Phim 18+</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-hinh-su">Phim Hình Sự</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-gia-dinh">Phim Gia Đình</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-khoa-hoc">Phim Khoa Học</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-vien-thuong">Phim Viễn Tưởng</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-netflix">Phim Netflix</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-am-nhac">Phim Âm Nhạc</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-than-thoai">Phim Thần Thoại</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-hoat-hinh">Phim Hoạt Hình</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107">
+                                            <a href="https://phimmoiyyy.net/the-loai/phim-chinh-kich">Phim Chính Kịch</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109">
+                                            <a href="https://phimmoiyyy.net/the-loai/tv-shows">TV Shows</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                                    <a href="#">Quốc gia</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-au-my">Phim Âu Mỹ</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-han-quoc">Phim Hàn Quốc</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-trung-quoc">Phim Trung Quốc</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-nhat-ban">Phim Nhật Bản</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-dai-loan">Phim Đài Loan</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-hong-kong">Phim Hồng Kông</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-thai-lan">Phim Thái Lan</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-an-do">Phim Ấn Độ</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-philippines">Phim Philippines</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-viet-nam">Phim Việt Nam</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-123">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-indonesia">Phim Indonesia</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124">
+                                            <a href="https://phimmoiyyy.net/quoc-gia/phim-singapore">Phim Singapore</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contenedor">
+                <div class="login_box">
+                    <div class="box">
+                        <a id="c_loginbox">
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <h3>Login to your account</h3>
+                        <form method="post" id="dooplay_login_user">
+                            <fieldset class="user">
+                                <input type="text" name="log" placeholder="Username">
+                            </fieldset>
+                            <fieldset class="password">
+                                <input type="password" name="pwd" placeholder="Password">
+                            </fieldset>
+                            <label>
+                                <input name="rmb" type="checkbox" id="rememberme" value="forever" checked>Remember Me
+                            </label>
+                            <fieldset class="submit">
+                                <input id="dooplay_login_btn" data-btntext="Log in" type="submit" value="Log in">
+                            </fieldset>
+                            <a class="register" href="https://phimmoiyyy.net/gioi-thieu?action=sign-in">Register a new account</a>
+                            <label>
+                                <a class="pteks" href="https://phimmoiyyy.net/wp-login.php?action=lostpassword">Lost your password?</a>
+                            </label>
+                            <input type="hidden" name="red" value="https://phimmoiyyy.net/">
+                            <input type="hidden" name="action" value="dooplay_login">
+                        </form>
+                    </div>
+                </div>
+                <center>
+                    <div class="phimmmoi" style=" border: 1px solid #b8b612; background: #000; padding: 10px; line-height: 20px;
+">
+                        Truy cập Phimmoiy.com nếu không vào được <b>Phimmoi</b>
+                    </div>
+                </center>
+                <div class="module_home_ads" style=" background: #0f0f0fe6;">
+                    <a rel="nofollow" href="https://0094044.com" target="_blank">
+                        <img src="https://i.imgur.com/zKgQQxx.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <a rel="nofollow" href="https://new88066.com/?a=769979" target="_blank">
+                        <img src="https://i.imgur.com/s52OANH.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <a rel="nofollow" href="https://68gb.cam/cs2" target="_blank">
+                        <img src="https://i.imgur.com/PifDEKX.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <a rel="nofollow" href="https://www.epscore.com/d/en?utm_source=phimmoi&utm_medium=CPC&utm_campaign=banner" target="_blank">
+                        <img src="https://i.imgur.com/gYUho5M.jpg" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                </div>
+                <div class="module">
+                    <div class="content right normal">
+                        <div id="slider-movies-tvshows" class="animation-1 slider">
+                            <article class="item" id="post-58564">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/bo-chong-nang-dau">
+                                        <img src="https://image.tmdb.org/t/p/w500/oC7xNZoc1y0RClNxYb77GsOKoaJ.jpg" alt="Bố Chồng Nàng Dâu"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/bo-chong-nang-dau">
+                                        <div class="data">
+                                            <h3 class="title">Bố Chồng Nàng Dâu</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-46308">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711416">
+                                        <img src="https://image.tmdb.org/t/p/w500/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg" alt="Biệt Đội Đánh Thuê 4"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711416">
+                                        <div class="data">
+                                            <h3 class="title">Biệt Đội Đánh Thuê 4</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-58699">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/suc-manh-tien-le">
+                                        <img src="https://image.tmdb.org/t/p/w500/hb0BeFvZNx2zLGWwuwENOIVeK1U.jpg" alt="Sức Mạnh Tiền Lẻ"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/suc-manh-tien-le">
+                                        <div class="data">
+                                            <h3 class="title">Sức Mạnh Tiền Lẻ</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-53330">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/chuyen-tinh-3-nguoi">
+                                        <img src="https://image.tmdb.org/t/p/w500/6XrhD4C1WrwVUf80XaNL2711yXA.jpg" alt="Chuyện Tình 3 Người"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/chuyen-tinh-3-nguoi">
+                                        <div class="data">
+                                            <h3 class="title">Chuyện Tình 3 Người</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-58559">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/ac-quy-an-minh">
+                                        <img src="https://image.tmdb.org/t/p/w500/cavK9ox37pxDg11RvJINMH63onU.jpg" alt="Ác Quỷ Ẩn Mình"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/ac-quy-an-minh">
+                                        <div class="data">
+                                            <h3 class="title">Ác Quỷ Ẩn Mình</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-58567">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">
+                                        <img src="https://image.tmdb.org/t/p/w500/3frqf9mDNcNEpGOUkZpf6lpkMBy.jpg" alt="Đất Rừng Phương Nam"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">
+                                        <div class="data">
+                                            <h3 class="title">Đất Rừng Phương Nam</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">Coming Soon</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-54892">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/quy-am-tin-do-154212">
+                                        <img src="https://image.tmdb.org/t/p/w500/azD31DjpV3PJfjF3h72LVw2WCSD.jpg" alt="Quỷ Ám: Tín Đồ"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/quy-am-tin-do-154212">
+                                        <div class="data">
+                                            <h3 class="title">Quỷ Ám: Tín Đồ</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-45885">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/an-mang-o-venice-166120">
+                                        <img src="https://image.tmdb.org/t/p/w500/69d8whnfJJnuxocrSLSdnqE38zV.jpg" alt="Án Mạng Ở Venice"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/an-mang-o-venice-166120">
+                                        <div class="data">
+                                            <h3 class="title">Án Mạng Ở Venice</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-56388">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/nam-dem-kinh-hoang">
+                                        <img src="https://image.tmdb.org/t/p/w500/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg" alt="Năm Đêm Kinh Hoàng"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/nam-dem-kinh-hoang">
+                                        <div class="data">
+                                            <h3 class="title">Năm Đêm Kinh Hoàng</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                            <article class="item" id="post-50692">
+                                <div class="image">
+                                    <a href="https://phimmoiyyy.net/phim-le/phim-dinh-thu-ma-am">
+                                        <img src="https://image.tmdb.org/t/p/w500/mzlZAMjE2yk2sW3f9HTeBM3B3jw.jpg" alt="Dinh Thự Ma Ám"/>
+                                    </a>
+                                    <a href="https://phimmoiyyy.net/phim-le/phim-dinh-thu-ma-am">
+                                        <div class="data">
+                                            <h3 class="title">Dinh Thự Ma Ám</h3>
+                                            <span>2023</span>
+                                        </div>
+                                    </a>
+                                    <div class="trangthaislider">HD Vietsub</div>
+                                </div>
+                            </article>
+                        </div>
+                        <header>
+                            <h2>Phim mới nổi bật</h2>
+                            <div class="nav_items_module">
+                                <a class="btn prevf">
+                                    <i class="fas fa-caret-left"></i>
+                                </a>
+                                <a class="btn nextf">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                        </header>
+                        <div id="featload" class="load_modules">Loading..</div>
+                        <div id="featured-titles" class="items featured">
+                            <article id="post-featured-46308" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Biet-doi-danh-thue-4.jpg" alt="Biệt Đội Đánh Thuê 4">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711416">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711416">Biệt Đội Đánh Thuê 4</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-54297" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Phim-tet-o-lang-dia-nguc.jpg" alt="Tết Ở Làng Địa Ngục">
+                                    <div class="trangthai">Tập 6 HD</div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/tet-o-lang-dia-nguc-154212">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/tet-o-lang-dia-nguc-154212">Tết Ở Làng Địa Ngục</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-50405" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Loki.jpg" alt="Loki: Phần 2">
+                                    <div class="trangthai">Tập 5 Vietsub</div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/loki-phan-2-154231">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/loki-phan-2-154231">Loki: Phần 2</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-41105" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/One-Piece.jpg" alt="Đảo Hải Tặc">
+                                    <div class="trangthai">Full 8/8 Vietsub</div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/dao-hai-tac-one-piece-live-action-154104">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/dao-hai-tac-one-piece-live-action-154104">Đảo Hải Tặc</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-45956" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Escape-of-the-Seven.jpg" alt="Cuộc Chiến Sinh Tồn">
+                                    <div class="trangthai">Tập 13 Vietsub</div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/cuoc-chien-sinh-ton-644141">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/cuoc-chien-sinh-ton-644141">Cuộc Chiến Sinh Tồn</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-43938" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Nun-2.jpg" alt="Ác Quỷ Ma Sơ 2">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/ac-quy-ma-so-2775">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/ac-quy-ma-so-2775">Ác Quỷ Ma Sơ 2</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-34366" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/07/Oppenheimer.jpg" alt="Oppenheimer">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/oppenheimer-167773">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/oppenheimer-167773">Oppenheimer</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-21797" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/06/Elemental.jpg" alt="Xứ Sở Các Nguyên Tố">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/xu-so-cac-nguyen-to-611516">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/xu-so-cac-nguyen-to-611516">Xứ Sở Các Nguyên Tố</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-7430" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/05/meg-2.jpg" alt="Cá Mập Siêu Bạo Chúa 2: Vực Sâu">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/ca-map-sieu-bao-chua-2-178152">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/ca-map-sieu-bao-chua-2-178152">Cá Mập Siêu Bạo Chúa 2: Vực Sâu</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-360" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/03/John-Wick-4.jpg" alt="John Wick: Phần 4">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/phim-john-wick-phan-4-15472">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/phim-john-wick-phan-4-15472">John Wick: Phần 4</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-3464" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/07/ve-binh-dai-ngan-ha.jpg" alt="Vệ Binh Dải Ngân Hà 3">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/ve-binh-dai-ngan-ha-4-745141">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/ve-binh-dai-ngan-ha-4-745141">Vệ Binh Dải Ngân Hà 3</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-3431" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/06/Phim-Transformers-7.jpg" alt="Transformers 7: Quái Thú Trỗi Dậy">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/transformers-quai-thu-troi-day">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/transformers-quai-thu-troi-day">Transformers 7: Quái Thú Trỗi Dậy</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-146" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/03/the-little-mermaid.jpg" alt="Nàng Tiên Cá">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/the-little-mermaid-2">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/the-little-mermaid-2">Nàng Tiên Cá</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-13252" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/06/The-Flash-vietsub.jpg" alt="The Flash">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/phim-the-flash-1">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/phim-the-flash-1">The Flash</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                            <article id="post-featured-3433" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/05/Qua-Nhanh-Qua-Nguy-Hiem-10-2023.jpg" alt="Quá Nhanh Quá Nguy Hiểm 10">
+                                    <div class="trangthai">HD Vietsub </div>
+                                    <div class="featu">NỔI BẬT</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/qua-nhanh-qua-nguy-hiem-10-2">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data dfeatur">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/qua-nhanh-qua-nguy-hiem-10-2">Quá Nhanh Quá Nguy Hiểm 10</a>
+                                    </h3>
+                                    <span>2023</span>
+                                </div>
+                            </article>
+                        </div>
+                        <header>
+                            <h2>Phim chiếu rạp mới cập nhật</h2>
+                            <div class="nav_items_module">
+                                <a class="btn next_phim-chieu-rap">
+                                    <i class="fas fa-caret-left"></i>
+                                </a>
+                                <a class="btn prev_phim-chieu-rap">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                            <span>
+                                <a href="https://phimmoiyyy.net/the-loai/phim-chieu-rap" class="see-all">Xem thêm</a>
+                            </span>
+                        </header>
+                        <div class="genreload load_modules">Loading..</div>
+                        <div id="genre_phim-chieu-rap" class="list_genres items">
+                            <article id="post-58567" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Dat-rung-phuong-nam.jpg" alt="Đất Rừng Phương Nam">
+                                    <div class="trangthai">Coming Soon</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">Đất Rừng Phương Nam</a>
+                                    </h3>
+                                    <span>
+                                        <span>Dat Rung Phuong Nam 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56802" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/PAW-Patrol-Phim-Sieu-Dang.jpg" alt="PAW Patrol: Phim Siêu Đẳng">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/paw-patrol-phim-sieu-dang">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/paw-patrol-phim-sieu-dang">PAW Patrol: Phim Siêu Đẳng</a>
+                                    </h3>
+                                    <span>
+                                        <span>PAW Patrol: The Mighty Movie 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56388" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Nam-Dem-Kinh-Hoang.jpg" alt="Năm Đêm Kinh Hoàng">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/nam-dem-kinh-hoang">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/nam-dem-kinh-hoang">Năm Đêm Kinh Hoàng</a>
+                                    </h3>
+                                    <span>
+                                        <span>Five Nights at Freddy's 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-45885" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/An-Mang-O-Venice.jpg" alt="Án Mạng Ở Venice">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/an-mang-o-venice-166120">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/an-mang-o-venice-166120">Án Mạng Ở Venice</a>
+                                    </h3>
+                                    <span>
+                                        <span>A Haunting in Venice 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-54892" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/quy-am-tin-do.jpg" alt="Quỷ Ám: Tín Đồ">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/quy-am-tin-do-154212">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/quy-am-tin-do-154212">Quỷ Ám: Tín Đồ</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Exorcist: Believer 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-16155" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/04/Bua-Hinh-Nhan.jpg" alt="Bùa Hình Nhân">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/bua-hinh-nhan">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/bua-hinh-nhan">Bùa Hình Nhân</a>
+                                    </h3>
+                                    <span>
+                                        <span>Hoon Payon 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-52613" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/Nhan-Duyen-Tien-Dinh.jpg" alt="Nhân Duyên Tiền Đình">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/nhan-duyen-tien-dinh">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/nhan-duyen-tien-dinh">Nhân Duyên Tiền Đình</a>
+                                    </h3>
+                                    <span>
+                                        <span>Honey Sweet 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-46308" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Biet-doi-danh-thue-4.jpg" alt="Biệt Đội Đánh Thuê 4">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711415">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711415">Biệt Đội Đánh Thuê 4</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Expendables 4 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-1434" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/Phim-Blue-Beetle.jpg" alt="Blue Beetle">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/blue-beetle-185426">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/blue-beetle-185426">Blue Beetle</a>
+                                    </h3>
+                                    <span>
+                                        <span>Blue Beetle 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-46405" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Thien-ac-doi-dau-3.jpg" alt="Thiện Ác Đối Đầu 3">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/thien-ac-doi-dau-3-661114">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/thien-ac-doi-dau-3-661114">Thiện Ác Đối Đầu 3</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Equalizer 3 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                        <script>
+                            jQuery(document).ready(function($) {
+                                var owl = $("#genre_phim-chieu-rap");
+                                owl.owlCarousel({
+                                    items: 5,
+                                    autoPlay: false,
+                                    stopOnHover: true,
+                                    pagination: false,
+                                    itemsDesktop: [1400, 6],
+                                    itemsDesktopSmall: [1300, 5],
+                                    itemsTablet: [768, 4],
+                                    itemsTabletSmall: false,
+                                    itemsMobile: [479, 3],
+                                });
+                                $(".next_phim-chieu-rap").click(function() {
+                                    owl.trigger('owl.prev');
+                                })
+                                $(".prev_phim-chieu-rap").click(function() {
+                                    owl.trigger('owl.next');
+                                })
+                            });
+                        </script>
+                        <header>
+                            <h2>Phim bộ mới cập nhật</h2>
+                            <div class="nav_items_module">
+                                <a class="btn prev4">
+                                    <i class="fas fa-caret-left"></i>
+                                </a>
+                                <a class="btn next4">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                            <span>
+                                <a href="https://phimmoiyyy.net/phim-bo" class="see-all">Xem thêm</a>
+                            </span>
+                        </header>
+                        <div id="tvload" class="load_modules">Loading..</div>
+                        <div id="dt-tvshows" class="items normal">
+                            <article id="post-56829" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Di-Ai-Vi-Doanh.jpg" alt="Dĩ Ái Vi Doanh">
+                                    <div class="trangthai">Tập 16 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/di-ai-vi-doanh-101374">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/di-ai-vi-doanh-101374">Dĩ Ái Vi Doanh</a>
+                                    </h3>
+                                    <span>
+                                        <span>Only for Love 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56812" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Nguoi-tinh-chua-lanh.jpg" alt="Người Tình Chữa Lành">
+                                    <div class="trangthai">Tập 15 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/nguoi-tinh-chua-lanh">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/nguoi-tinh-chua-lanh">Người Tình Chữa Lành</a>
+                                    </h3>
+                                    <span>
+                                        <span>Love is Panacea 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-9004" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/05/ninh-an-nhu-mong.jpg" alt="Ninh An Như Mộng">
+                                    <div class="trangthai">Tập 8 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/ninh-an-nhu-mong">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/ninh-an-nhu-mong">Ninh An Như Mộng</a>
+                                    </h3>
+                                    <span>
+                                        <span>Story of Kunning Palace 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-54297" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Phim-tet-o-lang-dia-nguc.jpg" alt="Tết Ở Làng Địa Ngục">
+                                    <div class="trangthai">Tập 6 HD</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/tet-o-lang-dia-nguc-154212">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/tet-o-lang-dia-nguc-154212">Tết Ở Làng Địa Ngục</a>
+                                    </h3>
+                                    <span>
+                                        <span>Tet O Lang Dia Nguc 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-50405" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Loki.jpg" alt="Loki: Phần 2">
+                                    <div class="trangthai">Tập 5 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/loki-phan-2-154231">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/loki-phan-2-154231">Loki: Phần 2</a>
+                                    </h3>
+                                    <span>
+                                        <span>Loki Season 2 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-41105" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/One-Piece.jpg" alt="Đảo Hải Tặc">
+                                    <div class="trangthai">Full 8/8 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/dao-hai-tac-one-piece-live-action-154104">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/dao-hai-tac-one-piece-live-action-154104">Đảo Hải Tặc</a>
+                                    </h3>
+                                    <span>
+                                        <span>One Piece Live Action 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-55617" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://image.tmdb.org/t/p/w185/fcXdJlbSdUEeMSJFsXKsznGwwok.jpg" alt="One Piece">
+                                    <div class="trangthai">Tập 1082 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/one-piece">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/one-piece">One Piece</a>
+                                    </h3>
+                                    <span>
+                                        <span>One Piece 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-51781" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Co-Nang-Manh-Me-Gang-Nam-Soon.jpg" alt="Cô Nàng Mạnh Mẽ Gang Nam Soon">
+                                    <div class="trangthai">Tập 10 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/co-nang-manh-me-gang-nam-soon-761717">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/co-nang-manh-me-gang-nam-soon-761717">Cô Nàng Mạnh Mẽ Gang Nam Soon</a>
+                                    </h3>
+                                    <span>
+                                        <span>Strong Girl Nam Soon 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-45956" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Escape-of-the-Seven.jpg" alt="Cuộc Chiến Sinh Tồn">
+                                    <div class="trangthai">Tập 13 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/cuoc-chien-sinh-ton-644141">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/cuoc-chien-sinh-ton-644141">Cuộc Chiến Sinh Tồn</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Escape of the Seven 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-48340" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Gen-V.jpg" alt="Gen V">
+                                    <div class="trangthai">Full 8/8 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/gen-v-616181">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/gen-v-616181">Gen V</a>
+                                    </h3>
+                                    <span>
+                                        <span>Gen V 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-55525" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Doona.jpg" alt="Doona">
+                                    <div class="trangthai">Full 9/9 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/doona">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/doona">Doona</a>
+                                    </h3>
+                                    <span>
+                                        <span>Doona 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-51000" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Chucky-3.jpg" alt="Ma Búp Bê: Phần 3">
+                                    <div class="trangthai">Tập 4 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/ma-bup-be-phan-3-71718">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/ma-bup-be-phan-3-71718">Ma Búp Bê: Phần 3</a>
+                                    </h3>
+                                    <span>
+                                        <span>Chucky Season 3 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-48191" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Toi-ac-kinh-hoang.jpg" alt="Tội Ác Kinh Hoàng">
+                                    <div class="trangthai">Full 12/12 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/toi-ac-kinh-hoang-717114">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/toi-ac-kinh-hoang-717114">Tội Ác Kinh Hoàng</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Worst of Evil 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-44536" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Walking-Dead-Daryl-Dixon.jpg" alt="Xác Sống: Daryl Dixon">
+                                    <div class="trangthai">Full 6/6 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/xac-song-daryl-dixon-154841">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/xac-song-daryl-dixon-154841">Xác Sống: Daryl Dixon</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Walking Dead: Daryl Dixon 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-50301" class="item tvshows">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Lupin-phan-3.jpg" alt="Lupin: Phần 3">
+                                    <div class="trangthai">Full 7/7 Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-bo/lupin-phan-3-71791">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-bo/lupin-phan-3-71791">Lupin: Phần 3</a>
+                                    </h3>
+                                    <span>
+                                        <span>Lupin Season 3 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                        <header>
+                            <h2>Phim lẻ mới cập nhật</h2>
+                            <div class="nav_items_module">
+                                <a class="btn prev3">
+                                    <i class="fas fa-caret-left"></i>
+                                </a>
+                                <a class="btn next3">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                            <span>
+                                <a href="https://phimmoiyyy.net/phim-le" class="see-all">Xem thêm</a>
+                            </span>
+                        </header>
+                        <div id="movload" class="load_modules">Loading..</div>
+                        <div id="dt-movies" class="items normal">
+                            <article id="post-58564" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Tuhog.jpg" alt="Bố Chồng Nàng Dâu">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/bo-chong-nang-dau">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/bo-chong-nang-dau">Bố Chồng Nàng Dâu</a>
+                                    </h3>
+                                    <span>
+                                        <span>Tuhog 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-46308" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Biet-doi-danh-thue-4.jpg" alt="Biệt Đội Đánh Thuê 4">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711416">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/biet-doi-danh-thue-4-711416">Biệt Đội Đánh Thuê 4</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Expendables 4 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-58699" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Suc-Manh-Tien-Le.jpg" alt="Sức Mạnh Tiền Lẻ">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/suc-manh-tien-le">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/suc-manh-tien-le">Sức Mạnh Tiền Lẻ</a>
+                                    </h3>
+                                    <span>
+                                        <span>Dumb Money 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-53330" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Chuyen-tinh-3-nguoi.jpg" alt="Chuyện Tình 3 Người">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/chuyen-tinh-3-nguoi">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/chuyen-tinh-3-nguoi">Chuyện Tình 3 Người</a>
+                                    </h3>
+                                    <span>
+                                        <span>Patikim Tikim 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-58559" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Ac-Quy-An-Minh.jpg" alt="Ác Quỷ Ẩn Mình">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/ac-quy-an-minh">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/ac-quy-an-minh">Ác Quỷ Ẩn Mình</a>
+                                    </h3>
+                                    <span>
+                                        <span>When Evil Lurks 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-58567" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Dat-rung-phuong-nam.jpg" alt="Đất Rừng Phương Nam">
+                                    <div class="trangthai">Coming Soon</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">Đất Rừng Phương Nam</a>
+                                    </h3>
+                                    <span>
+                                        <span>Dat Rung Phuong Nam 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-54892" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/quy-am-tin-do.jpg" alt="Quỷ Ám: Tín Đồ">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/quy-am-tin-do-154212">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/quy-am-tin-do-154212">Quỷ Ám: Tín Đồ</a>
+                                    </h3>
+                                    <span>
+                                        <span>The Exorcist: Believer 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-45885" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/An-Mang-O-Venice.jpg" alt="Án Mạng Ở Venice">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/an-mang-o-venice-166120">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/an-mang-o-venice-166120">Án Mạng Ở Venice</a>
+                                    </h3>
+                                    <span>
+                                        <span>A Haunting in Venice 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56388" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Nam-Dem-Kinh-Hoang.jpg" alt="Năm Đêm Kinh Hoàng">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/nam-dem-kinh-hoang">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/nam-dem-kinh-hoang">Năm Đêm Kinh Hoàng</a>
+                                    </h3>
+                                    <span>
+                                        <span>Five Nights at Freddy's 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-50692" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/07/Dinh-Thu-Ma-Am.jpg" alt="Dinh Thự Ma Ám">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/phim-dinh-thu-ma-am">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/phim-dinh-thu-ma-am">Dinh Thự Ma Ám</a>
+                                    </h3>
+                                    <span>
+                                        <span>Haunted Mansion 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56779" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/1999/01/Thien-than-sa-doa-4.jpg" alt="Thiền Thần Sa Đọa 4: Tập Đoàn Yêu Râu Xanh">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/thien-than-sa-doa-4-tap-doan-yeu-rau-xanh">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/thien-than-sa-doa-4-tap-doan-yeu-rau-xanh">Thiền Thần Sa Đọa 4: Tập Đoàn Yêu Râu Xanh</a>
+                                    </h3>
+                                    <span>
+                                        <span>Raped by an Angel 4: The Raper's Union 1999 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56845" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Bo-Ba-Nu-Tac.jpg" alt="Bộ Ba Nữ Tặc">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/bo-ba-nu-tac">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/bo-ba-nu-tac">Bộ Ba Nữ Tặc</a>
+                                    </h3>
+                                    <span>
+                                        <span>Wingwomen 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56802" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/PAW-Patrol-Phim-Sieu-Dang.jpg" alt="PAW Patrol: Phim Siêu Đẳng">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/paw-patrol-phim-sieu-dang">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/paw-patrol-phim-sieu-dang">PAW Patrol: Phim Siêu Đẳng</a>
+                                    </h3>
+                                    <span>
+                                        <span>PAW Patrol: The Mighty Movie 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-55913" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Sila-Ay-Akin.jpg" alt="Trai Bao">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/trai-bao-3">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/trai-bao-3">Trai Bao</a>
+                                    </h3>
+                                    <span>
+                                        <span>Sila Ay Akin 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                            <article id="post-56257" class="item movies">
+                                <div class="poster">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Ahasss.jpg" alt="Người Đàn Bà Dâm Trá">
+                                    <div class="trangthai">HD Vietsub</div>
+                                    <a href="https://phimmoiyyy.net/phim-le/nguoi-dan-ba-dam-tra">
+                                        <div class="see play1"></div>
+                                    </a>
+                                </div>
+                                <div class="data">
+                                    <h3>
+                                        <a href="https://phimmoiyyy.net/phim-le/nguoi-dan-ba-dam-tra">Người Đàn Bà Dâm Trá</a>
+                                    </h3>
+                                    <span>
+                                        <span>Ahasss 2023 </span>
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                        <header>
+                            <h2>Tin tức</h2>
+                            <span>
+                                <a href="/tin-tuc">Xem thêm</a>
+                            </span>
+                        </header>
+                        <div class="list-items-blogs">
+                            <div class="post-entry" id="entry-79">
+                                <div class="home-blog-post">
+                                    <div class="entry-date">
+                                        <div class="date">5</div>
+                                        <div class="month">March</div>
+                                    </div>
+                                    <div class="entry-datails">
+                                        <div class="entry-title">
+                                            <a href="https://phimmoiyyy.net/top-12-phim-ngon-tinh-trung-quoc-hay-khong-nen-bo-qua">Top 12 phim ngôn tình Trung Quốc hay không nên bỏ qua</a>
+                                        </div>
+                                        <div class="entry-content">List những bộ phim ngôn tình Trung Quốc lãng mạn sẽ khiến tâm hồn bạn trở nên ngọt ngào. Tham khảo ngay top phim tình cảm Trung Quốc đã được phimmoi liệt kê bên dưới nhé! Thầm ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-entry" id="entry-74">
+                                <div class="home-blog-post">
+                                    <div class="entry-date">
+                                        <div class="date">5</div>
+                                        <div class="month">March</div>
+                                    </div>
+                                    <div class="entry-datails">
+                                        <div class="entry-title">
+                                            <a href="https://phimmoiyyy.net/10-bo-phim-hay-nen-xem-mot-lan-trong-doi">Top 10 bộ phim hay nhất mà bạn nên xem một lần trong đời</a>
+                                        </div>
+                                        <div class="entry-content">Phim truyện là một lĩnh vực rộng lớn, có rất nhiều thể loại phim với nhưng nội dung và ý nghĩa khác nhau. Xem phim không chỉ để giải trí, mà mỗi bộ phim còn đem lại những ý ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-entry" id="entry-70">
+                                <div class="home-blog-post">
+                                    <div class="entry-date">
+                                        <div class="date">5</div>
+                                        <div class="month">March</div>
+                                    </div>
+                                    <div class="entry-datails">
+                                        <div class="entry-title">
+                                            <a href="https://phimmoiyyy.net/top-cac-bo-phim-va-chuong-trinh-an-khach-nhat-tren-netflix-tu-truoc-den-nay">Top phim và chương trình ăn khách nhất trên Netflix từ trước đến nay</a>
+                                        </div>
+                                        <div class="entry-content">Netflix vừa công bố số liệu thống kê hàng tuần cho bộ phim và chương trình truyền hình ăn khách nhất trên nền tảng này. Những năm trước, Netflix thường không chia sẻ số lượng ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-entry" id="entry-63">
+                                <div class="home-blog-post">
+                                    <div class="entry-date">
+                                        <div class="date">5</div>
+                                        <div class="month">March</div>
+                                    </div>
+                                    <div class="entry-datails">
+                                        <div class="entry-title">
+                                            <a href="https://phimmoiyyy.net/top-15-phim-nhat-hay-va-y-nghia-ma-cac-ban-khong-nen-bo-lo">Top 15 phim Nhật hay và ý nghĩa mà các bạn không nên bỏ lỡ</a>
+                                        </div>
+                                        <div class="entry-content">Khi nhắc đến nền điện ảnh Nhật Bản, hẳn ai cũng sẽ nghĩ đến những bộ anime nổi tiếng trên toàn thế giới. Nhưng bên cạnh đó, các tác phẩm điện ảnh và phim truyền hình của Nhật ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-entry" id="entry-58">
+                                <div class="home-blog-post">
+                                    <div class="entry-date">
+                                        <div class="date">5</div>
+                                        <div class="month">March</div>
+                                    </div>
+                                    <div class="entry-datails">
+                                        <div class="entry-title">
+                                            <a href="https://phimmoiyyy.net/top-10-phim-bach-hop-han-trung-au-my-hay-va-tao-bao-nhat">Top 10+ Phim bách hợp Hàn, Trung, Âu Mỹ hay và táo bạo nhất</a>
+                                        </div>
+                                        <div class="entry-content">Phim bách hợp tuy còn khá mới mẻ nhưng lại được rất nhiều mọt phim ưa thích, đặc biệt là các bạn trẻ. Không chỉ thành công trong việc xây dựng tình huống phim, ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar right scrolling">
+                        <div class="fixed-sidebar-blank">
+                            <div class="dt_mainmeta">
+                                <nav class="releases">
+                                    <h2>Năm phát hành</h2>
+                                    <ul class="releases scrolling">
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2023">2023</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2022">2022</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2021">2021</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2020">2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2019">2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2018">2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2017">2017</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2016">2016</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2015">2015</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2014">2014</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2013">2013</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2012">2012</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2011">2011</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2010">2010</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2009">2009</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2008">2008</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2007">2007</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2006">2006</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2005">2005</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2004">2004</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2003">2003</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2002">2002</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2001">2001</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/2000">2000</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1999">1999</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1998">1998</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1997">1997</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1996">1996</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1995">1995</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1994">1994</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1993">1993</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1992">1992</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1991">1991</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1990">1990</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1989">1989</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1988">1988</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1987">1987</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1986">1986</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1985">1985</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1984">1984</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1983">1983</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1982">1982</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1981">1981</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1980">1980</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1979">1979</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1978">1978</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1977">1977</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1976">1976</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1974">1974</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://phimmoiyyy.net/nam-phat-hanh/1973">1973</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <aside id="dtw_content-2" class="widget doothemes_widget">
+                                <div class="dtw_content">
+                                    <article class="w_item_a" id="post-788">
+                                        <a href="https://phimmoiyyy.net/phim-le/goi-tinh">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/1988/09/Phim-Flirting-1988.jpg" alt="Gợi Tình"/>
+                                                <div class="data">
+                                                    <h3>Gợi Tình</h3>
+                                                    <span class="wdate">1988</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </aside>
+                            <aside id="dtw_content-3" class="widget doothemes_widget">
+                                <div class="dtw_content">
+                                    <article class="w_item_b" id="post-9004">
+                                        <a href="https://phimmoiyyy.net/phim-bo/ninh-an-nhu-mong">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/05/ninh-an-nhu-mong.jpg" alt="Ninh An Như Mộng"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Ninh An Như Mộng</h3>
+                                                <div class="wextra">
+                                                    <b>8.1</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-54297">
+                                        <a href="https://phimmoiyyy.net/phim-bo/tet-o-lang-dia-nguc-154212">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Phim-tet-o-lang-dia-nguc.jpg" alt="Tết Ở Làng Địa Ngục"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Tết Ở Làng Địa Ngục</h3>
+                                                <div class="wextra">
+                                                    <b>9.2</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-56829">
+                                        <a href="https://phimmoiyyy.net/phim-bo/di-ai-vi-doanh-101374">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Di-Ai-Vi-Doanh.jpg" alt="Dĩ Ái Vi Doanh"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Dĩ Ái Vi Doanh</h3>
+                                                <div class="wextra">
+                                                    <b>9.4</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-56812">
+                                        <a href="https://phimmoiyyy.net/phim-bo/nguoi-tinh-chua-lanh">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Nguoi-tinh-chua-lanh.jpg" alt="Người Tình Chữa Lành"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Người Tình Chữa Lành</h3>
+                                                <div class="wextra">
+                                                    <b>9.3</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-55617">
+                                        <a href="https://phimmoiyyy.net/phim-bo/one-piece">
+                                            <div class="image">
+                                                <img src="https://image.tmdb.org/t/p/w185/fcXdJlbSdUEeMSJFsXKsznGwwok.jpg" alt="One Piece"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>One Piece</h3>
+                                                <div class="wextra">
+                                                    <b>9.1</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </aside>
+                            <aside id="dtw_content-4" class="widget doothemes_widget">
+                                <div class="dtw_content">
+                                    <article class="w_item_b" id="post-58699">
+                                        <a href="https://phimmoiyyy.net/phim-le/suc-manh-tien-le">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Suc-Manh-Tien-Le.jpg" alt="Sức Mạnh Tiền Lẻ"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Sức Mạnh Tiền Lẻ</h3>
+                                                <div class="wextra">
+                                                    <b>10</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-58567">
+                                        <a href="https://phimmoiyyy.net/phim-le/dat-rung-phuong-nam">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Dat-rung-phuong-nam.jpg" alt="Đất Rừng Phương Nam"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Đất Rừng Phương Nam</h3>
+                                                <div class="wextra">
+                                                    <b>3.6</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-58564">
+                                        <a href="https://phimmoiyyy.net/phim-le/bo-chong-nang-dau">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Tuhog.jpg" alt="Bố Chồng Nàng Dâu"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Bố Chồng Nàng Dâu</h3>
+                                                <div class="wextra">
+                                                    <b>4.6</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-58559">
+                                        <a href="https://phimmoiyyy.net/phim-le/ac-quy-an-minh">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Ac-Quy-An-Minh.jpg" alt="Ác Quỷ Ẩn Mình"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Ác Quỷ Ẩn Mình</h3>
+                                                <div class="wextra">
+                                                    <b>6.4</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="w_item_b" id="post-56845">
+                                        <a href="https://phimmoiyyy.net/phim-le/bo-ba-nu-tac">
+                                            <div class="image">
+                                                <img src="https://phimmoiyyy.net/wp-content/uploads/2023/11/Bo-Ba-Nu-Tac.jpg" alt="Bộ Ba Nữ Tặc"/>
+                                            </div>
+                                            <div class="data">
+                                                <h3>Bộ Ba Nữ Tặc</h3>
+                                                <div class="wextra">
+                                                    <b>8.4</b>
+                                                    <span class="year">2023</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="main">
+                <div class="fbox">
+                    <div class="fcmpbox">
+                        <div class="primary">
+                            <div class="columenu">
+                                <div class="item">
+                                    <h3>Phim mới</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="/the-loai/phim-khoa-hoc">Phim Khoa Học</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/the-loai/phim-kinh-di">Phim Kinh Dị</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/the-loai/phim-chieu-rap">Phim Chiếu Rạp</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/the-loai/phim-hinh-su">Phim Hình Sự</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/the-loai/phim-hanh-dong">Phim Hành Động</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h3>Phim hay</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="/quoc-gia/phim-au-my">Phim Âu Mỹ</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/quoc-gia/phim-han-quoc">Phim Hàn Quốc</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/quoc-gia/phim-trung-quoc">Phim Trung Quốc</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/quoc-gia/phim-nhat-ban">Phim Nhật Bản</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/quoc-gia/phim-thai-lan">Phim Thái Lan</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h3>Thông tin</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="/gioi-thieu">Giới thiệu</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/lien-he-chung-toi">Liên hệ chúng tôi</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Điều khoản sử dụng</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/chinh-sach-rieng-tu">Chính sách riêng tư</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="/khieu-nai-ban-quyen">Khiếu nại bản quyền</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fotlogo">
+                                <div class="logo">
+                                    <img src="https://phimmoiyyy.net/wp-content/uploads/2023/03/phimmoi.png" alt="Phimmoi"/>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        <a href="https://phimmoiyyy.net">
+                                            <b>Phimmoi</b>
+                                        </a>
+                                        - Trang xem phim Online với giao diện mới được bố trí và thiết kế thân thiện với người dùng. Nguồn phim được tổng hợp từ các website lớn với đa dạng các đầu phim và thể loại vô cùng phong phú.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy">© Phimmoi</div>
+                        <span class="top-page">
+                            <a id="top-page">
+                                <i class="fas fa-angle-up"></i>
+                            </a>
+                        </span>
+                        <div class="fmenu">
+                            <ul id="menu-footer" class="menu">
+                                <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15">
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16">
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="floating_ads_bottom_textcss_container">
+            <div id="floating_ads_bottom_textcss_wrap">
+                <div id="floating_ads_bottom_textcss_ad">
+                    <a rel="nofollow" href="https://9606555.com/?cid=422877&languageCode=vi&type=4&currency=VND&aid=dy2023" target="_blank">
+                        <img src="https://i.imgur.com/YgYULsy.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <br>
+                    <a rel="nofollow" href="https://www.67123b.com/phimmoiyyy" target="_blank">
+                        <img src="https://i.imgur.com/NqMlWz2.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <a rel="nofollow" href="https://www.ee88567.com/phimmoiyyy" target="_blank">
+                        <img src="https://i.imgur.com/svir1d9.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <a rel="nofollow" href="https://f8bet0.io" target="_blank">
+                        <img src="https://i.imgur.com/D8KumR7.gif" alt="F8bet" style="width:598px;max-height:60px;">
+                    </a>
+                    <a rel="nofollow" href="https://new88066.com/?a=769979" target="_blank">
+                        <img src="https://i.imgur.com/7N8yVVo.gif" alt="Bet" style="width:598px;max-height:60px;">
+                    </a>
+                </div>
+                <div id="floating_ads_bottom_textcss_close">
+                    <a href="#" onclick="document.getElementById('floating_ads_bottom_textcss_container').style.display='none';return false;" id="floating_ads_bottom_textcss_x" style="border: solid 1px #5e5e5eb3;color: #fff;font-size: 12px; padding: 5px 15px 4px; font-weight: 700; white-space: nowrap;background-color: #000000b3;margin: 0px 0 0 -10px;">X</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $("#featured-titles").owlCarousel({
+                    autoPlay: false,
+                    items: 5,
+                    stopOnHover: true,
+                    pagination: false,
+                    itemsDesktop: [1199, 4],
+                    itemsDesktopSmall: [980, 4],
+                    itemsTablet: [768, 3],
+                    itemsTabletSmall: false,
+                    itemsMobile: [479, 3]
+                });
+                $(".nextf").click(function() {
+                    $("#featured-titles").trigger("owl.next")
+                });
+                $(".prevf").click(function() {
+                    $("#featured-titles").trigger("owl.prev")
+                });
+                $("#dt-movies").owlCarousel({
+                    autoPlay: false,
+                    items: 5,
+                    stopOnHover: true,
+                    pagination: false,
+                    itemsDesktop: [1199, 5],
+                    itemsDesktopSmall: [980, 5],
+                    itemsTablet: [768, 4],
+                    itemsTabletSmall: false,
+                    itemsMobile: [479, 3]
+                });
+                $(".next3").click(function() {
+                    $("#dt-movies").trigger("owl.next")
+                });
+                $(".prev3").click(function() {
+                    $("#dt-movies").trigger("owl.prev")
+                });
+                $("#dt-tvshows").owlCarousel({
+                    autoPlay: false,
+                    items: 5,
+                    stopOnHover: true,
+                    pagination: false,
+                    itemsDesktop: [1199, 5],
+                    itemsDesktopSmall: [980, 5],
+                    itemsTablet: [768, 4],
+                    itemsTabletSmall: false,
+                    itemsMobile: [479, 3]
+                });
+                $(".next4").click(function() {
+                    $("#dt-tvshows").trigger("owl.next")
+                });
+                $(".prev4").click(function() {
+                    $("#dt-tvshows").trigger("owl.prev")
+                });
+                $("#dt-episodes").owlCarousel({
+                    autoPlay: false,
+                    pagination: false,
+                    items: 3,
+                    stopOnHover: true,
+                    itemsDesktop: [900, 3],
+                    itemsDesktopSmall: [750, 3],
+                    itemsTablet: [500, 2],
+                    itemsMobile: [320, 1]
+                });
+                $(".next").click(function() {
+                    $("#dt-episodes").trigger("owl.next")
+                });
+                $(".prev").click(function() {
+                    $("#dt-episodes").trigger("owl.prev")
+                });
+                $("#dt-seasons").owlCarousel({
+                    autoPlay: false,
+                    items: 5,
+                    stopOnHover: true,
+                    pagination: false,
+                    itemsDesktop: [1199, 5],
+                    itemsDesktopSmall: [980, 5],
+                    itemsTablet: [768, 4],
+                    itemsTabletSmall: false,
+                    itemsMobile: [479, 3]
+                });
+                $(".next2").click(function() {
+                    $("#dt-seasons").trigger("owl.next")
+                });
+                $(".prev2").click(function() {
+                    $("#dt-seasons").trigger("owl.prev")
+                });
+                $("#slider-movies").owlCarousel({
+                    autoPlay: false,
+                    items: 2,
+                    stopOnHover: true,
+                    pagination: true,
+                    itemsDesktop: [1199, 2],
+                    itemsDesktopSmall: [980, 2],
+                    itemsTablet: [768, 2],
+                    itemsTabletSmall: [600, 1],
+                    itemsMobile: [479, 1]
+                });
+                $("#slider-tvshows").owlCarousel({
+                    autoPlay: false,
+                    items: 2,
+                    stopOnHover: true,
+                    pagination: true,
+                    itemsDesktop: [1199, 2],
+                    itemsDesktopSmall: [980, 2],
+                    itemsTablet: [768, 2],
+                    itemsTabletSmall: [600, 1],
+                    itemsMobile: [479, 1]
+                });
+                $("#slider-movies-tvshows").owlCarousel({
+                    autoPlay: false,
+                    items: 2,
+                    stopOnHover: true,
+                    pagination: true,
+                    itemsDesktop: [1199, 2],
+                    itemsDesktopSmall: [980, 2],
+                    itemsTablet: [768, 2],
+                    itemsTabletSmall: [600, 1],
+                    itemsMobile: [479, 1]
+                });
+                $(".reset").click(function(event) {
+                    if (!confirm(dtGonza.reset_all)) {
+                        event.preventDefault()
+                    }
+                });
+                $(".addcontent").click(function(event) {
+                    if (!confirm(dtGonza.manually_content)) {
+                        event.preventDefault()
+                    }
+                });
+            });
+            (function(b, c, d, e, f, h, j) {
+                b.GoogleAnalyticsObject = f,
+                b[f] = b[f] || function() {
+                    (b[f].q = b[f].q || []).push(arguments)
+                }
+                ,
+                b[f].l = 1 * new Date,
+                h = c.createElement(d),
+                j = c.getElementsByTagName(d)[0],
+                h.async = 1,
+                h.src = e,
+                j.parentNode.insertBefore(h, j)
+            }
+            )(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
+            ga("create", "UA-259766657-3", "auto"),
+            ga("send", "pageview");
+        </script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/front.scripts.min.js?ver=2.5.5" id="scripts-js"></script>
+        <script type="text/javascript" id="live_search-js-extra">
+            /* <![CDATA[ */
+            var dtGonza = {
+                "api": "https:\/\/phimmoiyyy.net\/wp-json\/dooplay\/search\/",
+                "glossary": "https:\/\/phimmoiyyy.net\/wp-json\/dooplay\/glossary\/",
+                "nonce": "ab2604e03e",
+                "area": ".live-search",
+                "button": ".search-button",
+                "more": "Xem t\u1ea5t c\u1ea3 k\u1ebft qu\u1ea3",
+                "mobile": "false",
+                "reset_all": "Really you want to restart all data?",
+                "manually_content": "They sure have added content manually?",
+                "loading": "Loading..",
+                "loadingplayer": "Loading player..",
+                "selectaplayer": "Select a video player",
+                "playeradstime": null,
+                "autoplayer": "1",
+                "livesearchactive": "1"
+            };
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="https://phimmoiyyy.net/wp-content/themes/phimmoi/assets/js/front.livesearch.min.js?ver=2.5.5" id="live_search-js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEL71EZSN0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-XEL71EZSN0');
+        </script>
+        <div id="oscuridad"></div>
+    </body>
